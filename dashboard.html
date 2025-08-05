@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Panel - Biblioteca Cervantes</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Fauna+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="library-dashboard">
+    <!-- Sidebar estilo estantería -->
+    <div class="library-sidebar">
+      <div class="library-user">
+        <i class="fas fa-user-circle"></i>
+        <span class="library-username">Bienvenido, Usuario</span>
+      </div>
+      
+      <nav class="library-nav">
+        <a href="#" class="library-nav-active">
+          <i class="fas fa-home"></i> Inicio
+        </a>
+        <a href="books.html" onclick="goTo('books.html')">
+          <i class="fas fa-book-open"></i> Catálogo
+        </a>
+        <a href="borrowings.html" onclick="goTo('borrowings.html')">
+          <i class="fas fa-clipboard-list"></i> Mis Préstamos
+        </a>
+        <a href="profile.html">
+          <i class="fas fa-user-cog"></i> Mi Perfil
+        </a>
+      </nav>
+      
+      <div class="library-sidebar-footer">
+        <a href="index.html" class="library-logout">
+          <i class="fas fa-sign-out-alt"></i> Cerrar sesión
+        </a>
+      </div>
+    </div>
+    
+    <!-- Contenido principal -->
+    <div class="library-main">
+      <div class="library-welcome">
+        <h1></i> Bienvenido a tu Biblioteca</h1>
+        <p>Explora nuestro catálogo o gestiona tus préstamos</p>
+      </div>
+      
+      <div class="library-cards">
+        <div class="library-card-dash" onclick="goTo('books.html')">
+          <i class="fas fa-book-open"></i>
+          <h3>Catálogo de Libros</h3>
+          <p>Explora nuestra colección</p>
+        </div>
+        
+        <div class="library-card-dash" onclick="goTo('borrowings.html')">
+          <i class="fas fa-clipboard-check"></i>
+          <h3>Mis Préstamos</h3>
+          <p>Gestiona tus libros</p>
+        </div>
+        
+        <div class="library-card-dash">
+          <i class="fas fa-clock-rotate-left"></i>
+          <h3>Historial</h3>
+          <p>Tus lecturas anteriores</p>
+        </div>
+      </div>
+      
+      <div class="library-recommendations">
+        <h2><i class="fas fa-star"></i> Recomendados para ti</h2>
+        <div class="library-books">
+          <div class="library-book">
+            <div class="library-book-cover" style="background-color: #8B4513;">
+              <i class="fas fa-book"></i>
+            </div>
+            <h4>Cien años de soledad</h4>
+            <p>Gabriel García Márquez</p>
+          </div>
+          <div class="library-book">
+            <div class="library-book-cover" style="background-color: #5d3a1a;">
+              <i class="fas fa-book"></i>
+            </div>
+            <h4>Don Quijote</h4>
+            <p>Miguel de Cervantes</p>
+          </div>
+          <div class="library-book">
+            <div class="library-book-cover" style="background-color: #A0522D;">
+              <i class="fas fa-book"></i>
+            </div>
+            <h4>La sombra del viento</h4>
+            <p>Carlos Ruiz Zafón</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Iniciar Sesión</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Fauna+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="library-container">
+    <div class="library-header">
+      
+      <h1>Biblioteca</h1>
+    </div>
+    
+    <div class="library-card">
+      <h2></i> Iniciar Sesión</h2>
+      
+      <div class="library-input-group">
+        <i class="fas fa-envelope"></i>
+        <input type="text" placeholder="Correo o usuario" class="library-input">
+      </div>
+      
+      <div class="library-input-group">
+        <i class="fas fa-lock"></i>
+        <input type="password" placeholder="Contraseña" class="library-input">
+      </div>
+      
+      <button class="library-btn" onclick="login()">
+        <i class="fas fa-sign-in-alt"></i> Ingresar
+      </button>
+      
+      <p class="library-footer">
+        ¿No tienes cuenta? 
+        <a href="register.html" class="library-link">
+          <i class="fas fa-feather-alt"></i> Regístrate aquí
+        </a>
+      </p>
+    </div>
+    
+    <div class="library-decoration">
+      <i class="fas fa-book"></i>
+      <i class="fas fa-feather"></i>
+      <i class="fas fa-scroll"></i>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
